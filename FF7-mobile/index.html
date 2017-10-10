@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="fullpage">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="address=no" name="format-detection"/>
+  <meta name="apple-mobile-web-app-capable" content="no" />
+
+  <title>court-attendance-mobile</title>
+  <meta name="keywords" content="" />  
+  <meta name="description" content="" /> 
+  <meta name="author" content="HOMOLO"> 
+  <link rel="apple-touch-icon-precomposed" href="" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="" />
+  <link rel="stylesheet" href="src/assets/scss/common.scss">
+  <!--STYLE_PLACEHOLDER-->
+</head>
+<body class="theme-white">
+  <div class="statusbar-overlay"></div>
+  <!-- Panels overlay-->
+  <div class="panel-overlay"></div>
+  <div class="views">
+    <div class="view view-main">
+      <link rel="import" href="src/pages/report/report-massage.html?__inline">
+    </div>
+  </div>
+  <script src="lib/mod.js"></script>
+  <script>
+
+    app = require('src/js/app');
+
+    app.set.init();
+
+
+    var myApp = app.framework.init();
+    var $$ = Dom7;
+  </script>
+  <!--SCRIPT_PLACEHOLDER-->
+</body>
+</html>
