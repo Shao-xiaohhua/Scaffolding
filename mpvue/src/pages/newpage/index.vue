@@ -6,7 +6,7 @@
 
 <script>
 import card from '@/components/card'
-
+import { mapGetters } from 'vuex'
 export default {
   components: {
     card
@@ -17,8 +17,15 @@ export default {
       tex: '这是一个新的页面aa'
     }
   },
-
+  computed: {
+    ...mapGetters([
+      'group'
+    ])
+  },
   created () {
+  },
+  onShow () {
+    console.log(this.group[0].name)
   }
 }
 </script>

@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div class="usermotto">
+    <div class="usermotto" @click='getGroup(12313)'>
       <div class="user-motto">
         <card :text="motto"></card>
       </div>
@@ -24,7 +24,7 @@
 
 <script>
 import card from '@/components/card'
-
+import { mapGetters, mapActions } from 'vuex'
 export default {
   data () {
     return {
@@ -37,12 +37,20 @@ export default {
   components: {
     card
   },
+  computed: {
+    ...mapGetters([
+      'group'
+    ])
+  },
   watch: {
     motto () {
       console.log(this.motto)
     }
   },
   methods: {
+    ...mapActions([
+      'getGroup'
+    ]),
     bindViewTap () {
       const url = '../logs/logs'
       wx.navigateTo({ url })
@@ -61,12 +69,15 @@ export default {
     },
     clickHandle (msg, ev) {
       console.log('clickHandle:', msg, ev)
+    },
+    onShow () {
     }
   },
-
   created () {
     // 调用应用实例的方法获取全局数据
     this.getUserInfo()
+    this.getGroup([{name: '1231313'}])
+    console.log(typeof (this.group[0]))
   }
 }
 </script>
