@@ -14,6 +14,7 @@
       </div>
     </div>
     <a :href="aurl">去新的页面</a>
+    <i class="iconfont icon-aircraft data-v-7ca92acd"></i>
     <form class="form-container">
       <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />

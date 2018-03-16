@@ -11,7 +11,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped="" type="text/css" scoped>
+@import 'assets/scss/common.scss';
 .container {
   height: 100%;
   display: flex;
