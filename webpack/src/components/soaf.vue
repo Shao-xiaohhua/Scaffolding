@@ -56,12 +56,7 @@ export default {
   },
   mounted () {
     console.log('后')
-    let url = {
-      city: '310000',
-      geoobj: '121.415309%7C31.121995%7C121.639842%7C31.347154',
-      words: '大成'
-    }
-    this.getDistrict(url).then(json => {
+    this.getDistrict().then(json => {
       console.log(json)
     })
   }

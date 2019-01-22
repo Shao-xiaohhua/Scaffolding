@@ -18,13 +18,8 @@ export default {
     height: 100%;
   }
   #app{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    height: 100%;
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 </style>

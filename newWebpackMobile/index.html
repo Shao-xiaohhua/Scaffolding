@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <title>移动端脚手架</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      let fontSize
+      fontSize = window.screen.width / 750 * 100
+      document.querySelector('html').style.fontSize = fontSize + 'px'
+    </script>
+  </body>
+</html>
